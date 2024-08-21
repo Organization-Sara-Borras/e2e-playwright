@@ -1,4 +1,4 @@
-import { Given, When, Then, And } from '@cucumber/cucumber';
+import { Given, When, Then} from '@cucumber/cucumber';
 
 When('I test playwright record', async function () {
     await this.page.goto('https://www.saucedemo.com/');

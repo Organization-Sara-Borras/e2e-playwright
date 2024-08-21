@@ -1,5 +1,7 @@
 Feature: Login SauceLabs
 
   Scenario: Login with valid username and password
-    When I navigate to main page
+    Given the user is on sauceLabs login page
+    When the user fill username with "standar_user"
+    And the user fill password with "secret_sauce"
     
