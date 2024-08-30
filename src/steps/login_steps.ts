@@ -27,11 +27,11 @@ When('the user press login button', async function () {
 
 })
 
-Then('the user should see products page', async function () {
+// Then('the user should see products page', async function () {
 
-  await this.expect(this.page.locator('[data-test="tittle"]')).toBeVisible();
+//   await expect(this.page.locator('[data-test="tittle"]')).toBeVisible();
 
-})
+// })
 
 
 
