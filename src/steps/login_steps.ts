@@ -1,10 +1,11 @@
 import { Given, When, Then} from '@cucumber/cucumber';
 
 When('I test playwright record', async function () {
+});
    
     
 
-Given('the user is on sauceLabs login page', async function () => {
+Given('the user is on sauceLabs login page', async function () {
 
     await this.page.goto(this.URL);
 })
@@ -28,7 +29,7 @@ When('the user press login button', async function () {
 
 Then('the user should see products page', async function () {
 
-  await expect(this.page.locator('[data-test="tittle"]')).toBeVisible();
+  await this.expect(this.page.locator('[data-test="tittle"]')).toBeVisible();
 
 })
 
