@@ -9,6 +9,7 @@ When('I test playwright record', async function () {
 Given('the user is on sauceLabs login page', async function () {
 
     await this.page.goto(this.URL);
+    await this.page.waitForTimeout(3000);
 })
 
 When('the user fill username with {string}', async function (username: string) {
@@ -30,6 +31,7 @@ When('the user press login button', async function () {
 
 Then('the user should see products page', async function () {
 
+  await this.page.waitForTimeout(3000);
   await expect(this.page.locator('[data-test="title"]')).toBeVisible();
 
 })
